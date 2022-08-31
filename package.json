@@ -2,7 +2,7 @@
   "name": "com.gentlymad.tooltipgenerator",
   "version": "0.0.2",
   "displayName": "Tooltip Generator",
-  "description": "This is an package to automatically generate tooltip attributes from code comments at appropiate places",
+  "description": "This is an package to automatically generate tooltip attributes from code comments at appropiate places.",
   "unity": "2021.2",
  "keywords": [
     "tooltip",
@@ -10,7 +10,7 @@
     "codegen"
   ],
   "author": {
-    "name": "Matthias Guntrum",
+    "name": "Gentlymad Studios",
     "email": "m.guntrum@gentlymadstudios.com",
     "url": "https://gentlymad.org"
   }
