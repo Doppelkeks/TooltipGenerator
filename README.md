@@ -2,8 +2,8 @@ With this package, all comments in your scripts will receive a Tooltip attribute
 
 ## Example
 
-public class NewBehaviourScript : MonoBehaviour
-`{
+`public class NewBehaviourScript : MonoBehaviour
+{
     /// <summary>
     /// This is a nice description
     /// </summary>
@@ -12,8 +12,8 @@ public class NewBehaviourScript : MonoBehaviour
 
 Will turn into:
 
-public class NewBehaviourScript : MonoBehaviour
-`{
+`public class NewBehaviourScript : MonoBehaviour
+{
     /// <summary>
     /// This is a nice description
     /// </summary>
