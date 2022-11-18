@@ -11,3 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added path checks to avoid processing of scripts found in "Packages/" or in the "Library/"
 - Added check to prepend the UnityEngine namespace to the Tooltip attribute only if needed, to avoid redundant declaration
 - Escaped double quotes as this could lead to errors with Tooltip string content
+
+## [0.0.3] - 2022-11-18
+### Added
+- removed backslashes from converted tooltips

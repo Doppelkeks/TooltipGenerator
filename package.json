@@ -1,6 +1,6 @@
 {
   "name": "com.gentlymad.tooltipgenerator",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "displayName": "Tooltip Generator",
   "description": "This is an package to automatically generate tooltip attributes from code comments at appropiate places.",
   "unity": "2021.2",
