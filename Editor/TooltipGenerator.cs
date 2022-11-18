@@ -287,6 +287,7 @@ namespace TooltipGenerator {
 
             // replace double quotes
             tooltipContent = tooltipContent.Replace("\"", "\\\"");
+            tooltipContent = tooltipContent.Replace(@"\", "");
             return tooltipContent;
         }
     }
