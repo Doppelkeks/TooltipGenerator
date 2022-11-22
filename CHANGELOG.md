@@ -15,3 +15,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.3] - 2022-11-18
 ### Added
 - removed backslashes from converted tooltips
+
+## [0.0.4] - 2022-11-22
+### Added
+- created more reliable method for finding & converting illegal backslashes
+- double quotation marks are now converted to simple quotation marks

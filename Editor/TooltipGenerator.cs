@@ -286,8 +286,13 @@ namespace TooltipGenerator {
                 tooltipContent = documentation;
 
             // replace double quotes
-            tooltipContent = tooltipContent.Replace("\"", "\\\"");
-            tooltipContent = tooltipContent.Replace(@"\", "");
+            tooltipContent = tooltipContent.Replace("\"", "'");
+
+            // replace illegal backslashes
+            foreach (Match m in Regex.Matches(tooltipContent, @"\\[^nratfvbn]", RegexOptions.Multiline)) {
+                tooltipContent = tooltipContent.Remove(m.Index, 1).Insert(m.Index,"/");
+            }
+
             return tooltipContent;
         }
     }
