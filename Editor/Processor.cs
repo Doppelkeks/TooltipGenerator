@@ -5,7 +5,7 @@ namespace TooltipGenerator {
     class Processor : AssetPostprocessor {
 
         private static TooltipGenerator tooltipGenerator = new TooltipGenerator();
-        private static readonly string[] illegalKeyWords = new string[] { "Packages/", "Library/" };
+        private static readonly string[] illegalKeyWords = new string[] { "Packages/", "Library/", "Plugins/" };
 
         /// <summary>
         /// Called when any asset changed

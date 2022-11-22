@@ -20,3 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - created more reliable method for finding & converting illegal backslashes
 - double quotation marks are now converted to simple quotation marks
+
+## [0.0.5] - 2022-11-22
+### Added
+- Plugins folder is now excluded from Tooltip generation
