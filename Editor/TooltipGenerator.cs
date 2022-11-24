@@ -146,21 +146,26 @@ namespace TooltipGenerator {
         /// <param name="fileEncoding"> The <see cref="Encoding"/> of the input file and output file. </param>
         /// <returns> True if an output file with updated content was created. </returns>
         public bool TryProcessFile(string inputFilePath, string outputFilePath, Encoding fileEncoding) {
-            string inputFileContent;
-            using (StreamReader streamReader = new StreamReader(inputFilePath, fileEncoding)) {
-                inputFileContent = streamReader.ReadToEnd();
-            }
-
-            string outputFileContent;
-            bool fileWasModified = TryProcessText(inputFileContent, out outputFileContent);
-
-            if (fileWasModified) {
-                using (StreamWriter writer = new StreamWriter(outputFilePath, false, fileEncoding)) {
-                    writer.Write(outputFileContent);
+            try {
+                string inputFileContent;
+                using (StreamReader streamReader = new StreamReader(inputFilePath, fileEncoding)) {
+                    inputFileContent = streamReader.ReadToEnd();
                 }
-            }
 
-            return fileWasModified;
+                string outputFileContent;
+                bool fileWasModified = TryProcessText(inputFileContent, out outputFileContent);
+
+                if (fileWasModified) {
+                    using (StreamWriter writer = new StreamWriter(outputFilePath, false, fileEncoding)) {
+                        writer.Write(outputFileContent);
+                    }
+                }
+
+                return fileWasModified;
+
+            } catch (UnauthorizedAccessException) {
+                return false;
+            }
         }
 
         /// <summary>

@@ -47,6 +47,11 @@ namespace TooltipGenerator {
                 return false;
             }
 
+            FileAttributes attr = File.GetAttributes(path);
+            if (attr.HasFlag(FileAttributes.Directory)) {
+                return false;
+            }
+
             for (int i = 0, count = illegalKeyWords.Length; i<count; i++) {
                 if (path.IndexOf(illegalKeyWords[i]) >= 0) {
                     return false;

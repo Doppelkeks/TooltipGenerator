@@ -24,3 +24,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.0.5] - 2022-11-22
 ### Added
 - Plugins folder is now excluded from Tooltip generation
+
+## [0.0.6] - 2022-11-24
+### Added
+- prevented directories from being interpreted
+- saveguarded file processing to gracefully fail
