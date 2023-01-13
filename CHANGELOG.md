@@ -29,3 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - prevented directories from being interpreted
 - saveguarded file processing to gracefully fail
+
+## [0.0.7] - 2022-01-13
+### Fixed
+- removed custom error throw when it was in fact no error

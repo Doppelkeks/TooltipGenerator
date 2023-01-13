@@ -220,13 +220,16 @@ namespace TooltipGenerator {
             }
 
             foreach (CodeProcessingConfiguration codeProcessor in codeProcessors) {
+                Debug.Log("test ");
                 for (int i=0; i<codeProcessor.ValidFieldTypes.Length; i++) {
+                    Debug.Log("test 2");
                     int insertedTextLength = 0;
                     string parserString = codeProcessor.Parser.Replace(validFieldsKey, codeProcessor.ValidFieldTypes[i]);
                     Regex regex = new Regex(parserString, RegexOptions.Multiline);
                     MatchCollection matches = regex.Matches(processedText);
                     int matchesCount = matches.Count;
                     for (int matchIndex = 0; matchIndex < matchesCount; matchIndex++) {
+                        Debug.Log("test 3");
                         Match match = matches[matchIndex];
                         GroupCollection groups = match.Groups;
                         string tooltipContent = BuildTooltipContent(groups["documentation"].Captures, codeProcessor.CommentExtractor);
@@ -282,10 +285,10 @@ namespace TooltipGenerator {
 
             string tooltipContent;
             if (commentExtractor != null) {
-                //extracting the significant meaningful part of the documentation
+                //extracting the significant meaningful part of the documentation 
                 Match match = commentExtractor.Match(documentation);
-                if (match.Success == false)
-                    throw new InvalidOperationException(String.Format(CultureInfo.InvariantCulture, "Could not parse the following documentation xml '{0}'", documentation));
+                //if (match.Success == false)
+                    //throw new InvalidOperationException(String.Format(CultureInfo.InvariantCulture, "Could not parse the following documentation xml '{0}'", documentation));
                 tooltipContent = match.Groups["comment"].ToString();
             } else
                 tooltipContent = documentation;
