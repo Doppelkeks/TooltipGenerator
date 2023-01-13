@@ -30,6 +30,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - prevented directories from being interpreted
 - saveguarded file processing to gracefully fail
 
-## [0.0.7] - 2022-01-13
+## [0.0.7] - 2023-01-13
 ### Fixed
 - removed custom error throw when it was in fact no error
+
+## [0.0.8] - 2023-01-13
+### Fixed
+- removed leftover debug logs
