@@ -1,4 +1,10 @@
-With this package, all comments in your scripts will receive a Tooltip attribute where applicable.
+# TooltipGenerator
+![Version](https://img.shields.io/github/package-json/v/Doppelkeks/TooltipGenerator)
+![GitHub last commit](https://img.shields.io/github/last-commit/Doppelkeks/TooltipGenerator)
+![GitHub](https://img.shields.io/github/license/Doppelkeks/TooltipGenerator)
+![GitHub issues](https://img.shields.io/github/issues-raw/Doppelkeks/TooltipGenerator)
+
+This is a editor tool for `Unity`, that will add all comments in your scripts as a `[Tooltip]` attribute where applicable. This will give you tooltips for all your fields.
 
 ## Installation
 1. Open your `Package Manager` window in Unity
@@ -8,8 +14,7 @@ With this package, all comments in your scripts will receive a Tooltip attribute
 
 ## Example
 ```c#
-public class NewBehaviourScript : MonoBehaviour   
-{
+public class NewBehaviourScript : MonoBehaviour {
     /// <summary>
     /// This is a nice description
     /// </summary>
@@ -18,8 +23,7 @@ public class NewBehaviourScript : MonoBehaviour
 ```
 Will turn into:
 ```c#
-public class NewBehaviourScript : MonoBehaviour
-{
+public class NewBehaviourScript : MonoBehaviour {
     /// <summary>
     /// This is a nice description
     /// </summary>
@@ -31,4 +35,4 @@ This will happen automatically, since this script makes use of an AssetPostproce
 
 ## Attribution
 
-This is a customized version of the following github project (by Akram El Hadri [https://github.com/ehakram]): https://github.com/ehakram/CommentToTooltip
+This is a customized version of the following github project (by [Akram El Hadri](https://github.com/ehakram)): [CommentToTooltip](https://github.com/ehakram/CommentToTooltip)
