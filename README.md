@@ -1,7 +1,7 @@
 With this package, all comments in your scripts will receive a Tooltip attribute where applicable.
 
 ## Example
-```
+```c#
 public class NewBehaviourScript : MonoBehaviour   
 {
     /// <summary>
@@ -11,7 +11,7 @@ public class NewBehaviourScript : MonoBehaviour
 }
 ```
 Will turn into:
-```
+```c#
 public class NewBehaviourScript : MonoBehaviour
 {
     /// <summary>
