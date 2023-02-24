@@ -1,5 +1,11 @@
 With this package, all comments in your scripts will receive a Tooltip attribute where applicable.
 
+## Installation
+1. Open your `Package Manager` window in Unity
+2. Click on the `'+'` icon and select `'Add package from git URL...'`
+3. Add https://github.com/Doppelkeks/TooltipGenerator.git package.
+6. You are ready to go.
+
 ## Example
 ```c#
 public class NewBehaviourScript : MonoBehaviour   
